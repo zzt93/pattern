@@ -8,11 +8,11 @@ package variance.bridge;
 public class Tool3D implements DrawTool {
     @Override
     public void drawLine() {
-        
+        System.out.println("draw 3D line");
     }
 
     @Override
     public void drawCircle() {
-
+        System.out.println("draw 3D circle");
     }
 }
