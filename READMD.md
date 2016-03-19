@@ -1,4 +1,7 @@
-###Aim
+##Aim
 learn design patterns by coding them
 
-###Implementation:
+##Implementation:
+#### strategy
+#### state 
+#### bridge
