@@ -9,8 +9,11 @@ public class Tester {
     public static void main(String[] args) {
         IntList intList = new IntList();
         intList.doSomething();
-        SumVisitor visitor = new SumVisitor();
-        intList.visit(visitor);
-        System.out.println(visitor.getSum());
+        SumVisitor sum = new SumVisitor();
+        intList.visit(sum);
+        System.out.println(sum.getSum());
+        BigVisitor big = new BigVisitor();
+        intList.visit(big);
+        System.out.println(big.getBig());
     }
 }

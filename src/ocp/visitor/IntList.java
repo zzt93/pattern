@@ -14,8 +14,8 @@ public class IntList implements AList {
     @Override
     public void doSomething() {
         integers.add(1);
-        integers.add(1);
-        integers.add(1);
+        integers.add(2);
+        integers.add(3);
     }
 
     @Override
