@@ -6,18 +6,28 @@ package decouple.command.bl;
  * Usage:
  */
 public class AddCommand implements Command {
+
+    EditBLService editBLService;
+    private String msg;
+
+    public AddCommand(EditBLService editBLService) {
+        this.editBLService = editBLService;
+    }
+
     @Override
-    public boolean doEdit() {
-        return false;
+    public boolean doEdit(String msg) {
+        this.msg = msg;
+        return editBLService.add(msg);
     }
 
     @Override
     public boolean redo() {
-        return false;
+        return editBLService.add(msg);
     }
 
     @Override
     public boolean undo() {
-        return false;
+        String delete = editBLService.delete(msg.length());
+        return delete != null;
     }
 }

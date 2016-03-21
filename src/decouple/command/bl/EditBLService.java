@@ -8,7 +8,9 @@ package decouple.command.bl;
 public interface EditBLService {
 
     boolean add(String msg);
-    boolean delete(String msg);
-    boolean moveCursor(long dis, FileDir dir);
+
+    String delete(int num);
+
+    boolean moveCursor(long dis, FilePos pos, FileDir dir);
 
 }

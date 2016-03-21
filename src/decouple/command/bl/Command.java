@@ -7,7 +7,7 @@ package decouple.command.bl;
  */
 public interface Command {
 
-    boolean doEdit();
+    boolean doEdit(String msg);
     boolean redo();
     boolean undo();
 
