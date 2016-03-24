@@ -1,5 +1,8 @@
 package ocp.decorator;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Created by zzt on 3/19/16.
  * <p>
@@ -13,5 +16,7 @@ public class Tester {
         FancyBorder bordered = new FancyBorder(textView);
         HorizontalBar horizontalBar = new HorizontalBar(bordered);
         horizontalBar.draw();
+        // adapter and decorator
+//        new BufferedReader(new InputStreamReader(System.in));
     }
 }
