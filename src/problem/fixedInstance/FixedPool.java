@@ -5,5 +5,7 @@ package problem.fixedInstance;
  * <p>
  * Usage:
  */
-public interface FixedPool {
+public interface FixedPool<T> {
+    T checkOut() throws InterruptedException;
+    void checkIn(T t);
 }

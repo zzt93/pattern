@@ -5,7 +5,7 @@ package problem.fixedInstance.notShared;
  * <p>
  * Usage:
  * <li>Fixed instance number</li>
- * <li>every instance can not be shared</li>
+ * <li>Every instance can not be shared</li>
  */
 public class NotSharedPool {
 }
