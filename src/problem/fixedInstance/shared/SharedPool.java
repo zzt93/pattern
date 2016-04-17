@@ -24,7 +24,7 @@ public class SharedPool<T> implements FixedPool<T> {
     public SharedPool(int s, Class<T> classObj)
             throws IllegalAccessException, InstantiationException {
         map = new HashMap<>(s);
-        lists = new ArrayList<>();
+        lists = new ArrayList<>(s);
         semaphore = new Semaphore(s);
         set = new BitSet(s);
         for (int i = 0; i < s; i++) {
